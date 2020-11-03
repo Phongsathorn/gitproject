@@ -22,16 +22,18 @@ class _State extends State<LoginPage> {
     return Scaffold(
         appBar: AppBar(
           title: Text(
-            'Login with Firebase',
-            style: TextStyle(color: Color(0xFFFAFAFA)),
+            'Login',
+            style: TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+            ),
           ),
-          backgroundColor: Colors.blue[800],
+          backgroundColor: Colors.green,
         ),
         body: Padding(
             padding: EdgeInsets.all(10),
             child: ListView(
               children: <Widget>[
-                Image.network('https://cdn.iconscout.com/icon/free/png-256/flutter-2038877-1720090.png'),
                 buildButtonlogin('Login'),
                 Container(
                   padding: EdgeInsets.all(10),
@@ -59,7 +61,7 @@ class _State extends State<LoginPage> {
                     padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
                     child: RaisedButton(
                       textColor: Colors.white,
-                      color: Colors.blue,
+                      color: Colors.green[500],
                       child: Text('Login'),
                       onPressed: () {
                         Login_user();
@@ -70,11 +72,11 @@ class _State extends State<LoginPage> {
                 Container(
                     child: Row(
                   children: <Widget>[
-                    Text('ยังไม่มีบัญชีใช่ไหม?'),
+                    Text('New Here?'),
                     FlatButton(
-                      textColor: Colors.blue,
+                      textColor: Colors.green[500],
                       child: Text(
-                        'Registed',
+                        'Register',
                         style: TextStyle(fontSize: 20),
                       ),
                       onPressed: () {
@@ -106,7 +108,7 @@ class _State extends State<LoginPage> {
       Navigator.of(context).pushAndRemoveUntil(
           materialPageRoute, (Route<dynamic> route) => false);
     }).catchError((response) {
-      print('email or password is not true');
+      print('email or password is not match');
     });
   }
 }
