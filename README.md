@@ -1,16 +1,35 @@
-# projectlogin
+### Perfumes
+พัฒนาแอปพลิเคชันด้วย Flutter
 
-A new Flutter project.
+## ผู้พัฒนาแอปพลิเคชัน
+รหัสนิสิต 60022673 นาย พงศธร ญาณะ
 
-## Getting Started
+## คลิปแนะนำการใช้แอปพลิเคชันเบื้องต้น
+https://www.youtube.com/watch?v=B68BT120izg&feature=youtu.be&fbclid=IwAR1tlktUQZwmKPjQBqHw7jMsn0rSPWAUNheZkAuBMZ2ihM8RV10rsOfY-xA
 
-This project is a starting point for a Flutter application.
+### รายละเอียดระบบ
 
-A few resources to get you started if this is your first Flutter project:
+## หน้าเข้าสู่ระบบ
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Register](https://user-images.githubusercontent.com/20910410/98271615-b2dee280-1fc2-11eb-8b3d-e79fef5a318e.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+หน้า Login ได้ทำการเรียกใช้ Firebase Authentication ในการเข้าสู่ระบบ
+
+## Firebase Authentication
+![Inkedfirebase_LI](https://user-images.githubusercontent.com/20910410/98272433-a7d88200-1fc3-11eb-8760-5b14b9c0c0b7.jpg)
+
+## หน้า Register 
+![Register](https://user-images.githubusercontent.com/20910410/98272516-c2126000-1fc3-11eb-9c03-cfb97eb57b0e.png)
+
+เมื่อกดยืนยันข้อมูลจะถูกส่งไปเก็บใน Cloud Firestore
+
+## หน้าหลัก
+![Homepage](https://user-images.githubusercontent.com/20910410/98272656-e8d09680-1fc3-11eb-82ca-ec2efee2119b.png)
+
+มีข้อมูลแสดงข้อมูลชื่อน้ำหอม,ราคา สามารถปัดซ้ายขวาเพื่อหาน้ำหอมอื่นๆได้ 
+Best deals เป็นการแสดงน้ำหอมที่กำลังลดราคาอยู่ตอนนี้ ในรูปแบบลดราคากี่ % 
+
+## หน้ารายละเอียดน้ำหอม
+![Detail](https://user-images.githubusercontent.com/20910410/98272979-51b80e80-1fc4-11eb-8958-0d1330d4b228.png)
+
+จะแสดงรายละเอียดต่างๆของน้ำหอม สามารถเพิ่มน้ำหอมใส่ตะกร้าเพื่อทำการซื้อ
